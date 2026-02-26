@@ -1,10 +1,10 @@
 """
 COMP 163 - Introduction to Programming
 Assignment: Chapter 7 - Course Schedule Formatter
-Name: [Your Full Name]
-GitHub Username: [Your Username]
+Name: [Talib Lyon]
+GitHub Username: [TalibLyon]
 Date: [Submission Date]
-Description: [What your program does]
+Description: [This program takes in cluttered as well as messy data, and uses string methods to clean and organize it into a formatted course schedule. It also checks for tme conflicts between classes.]
 AI Usage: [Describe any AI assistance OR write "None"]
 """
 
