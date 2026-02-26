@@ -12,6 +12,27 @@ AI Usage: [Describe any AI assistance OR write "None"]
 # Step 1: Input Parsing & Course Code Formatting
 # ============================================================
 
+courses = []
+
+while True:
+    line = input()
+
+    if line == "DONE":
+        break
+
+    parts = line.split("|")
+
+    code = parts[0].strip()
+    title = parts[1].strip()
+    days = parts[2].strip()
+    time = parts[3].strip()
+    room = parts[4].strip()
+
+    code = code.upper()
+
+    courses.append([code, title, days, time, room])
+    
+    print(code)
 
 # ============================================================
 # Step 2: Title and Room Formatting
