@@ -66,6 +66,18 @@ for course in courses:
 # Step 4: Time Standardization
 # ============================================================
 
+for course in courses:
+    time_string = course[3].replace(" ", "")
+
+    start, end = time_string.split("-")
+
+    start_time = end[:-2]
+    start_period = start [-2:].upper()
+
+    end_time = end[:-2]
+    end_period = end[-2:].upper()
+
+    course[3] = f"{start_time} {start_period} - {end_time} {end_period}" 
 
 # ============================================================
 # Step 5: Conflict Detection

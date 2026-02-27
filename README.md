@@ -130,8 +130,7 @@ The days field requires you to process the string one character at a time rather
 than treating it as a whole. Why is that necessary? Could you have produced the
 same result with a single string method call instead of a loop? Explain your reasoning.
 
-*Your answer here.*
-
+The days fields has to be processed one character at a time due to the fact each letter represents a diffrent day. If i treatedf the entire thing as a string, Python would not know that each letter has its own meeting. A single string method wouldnt be viable because methods like .replace() act on the entire string, not on each character and a seperate day.
 ---
 
 **Question 2**
@@ -141,8 +140,7 @@ How did you identify where one part ends and the other begins in your program?
 What would break in your solution if the input format changed — for example,
 if times were given as `9am` instead of `9:00am`?
 
-*Your answer here.*
-
+I identified where one part ends and the other begins by splitting the  string at the dash(-). After that I seperated the actual line from the AM/PM via slicing, where the lasat two characters represent AM/PM.
 ---
 
 **Question 3**
