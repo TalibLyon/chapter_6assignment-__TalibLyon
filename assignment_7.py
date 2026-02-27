@@ -32,17 +32,35 @@ while True:
 
     courses.append([code, title, days, time, room])
     
-    print(code)
-
 # ============================================================
 # Step 2: Title and Room Formatting
 # ============================================================
 
+for course in courses:
+    course[1] = course[1].title()
+
+    course[4] = course [4].upper().strip()
 
 # ============================================================
 # Step 3: Day Code Expansion
 # ============================================================
 
+day_map = {
+    "M": "Monday",
+    "T": "Tuesday",
+    "W": "Wednesday",
+    "R": "Thursday",
+    "F": "Friday"
+}
+
+for course in courses:
+    expanded_days = []
+
+    for letter in courses[2]:
+        if letter in day_map:
+            expanded_days.append(day_map[letter])
+
+    course[2] = ", ". join(expanded_days)        
 
 # ============================================================
 # Step 4: Time Standardization
